@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async() => {
   // Configuración de MindAR y Three.js
   const mindarThree = new window.MINDAR.IMAGE.MindARThree({
     container: document.body,
-    imageTargetSrc: "Target/targets.mind"
+    imageTargetSrc: "Target/targetsv2.mind"
   });
 
   
