@@ -300,6 +300,8 @@ await mindarThree.start();
       videos1.forEach(({ video, plane }) => {});
       videos2.forEach(({ video, plane }) => {});
       videos3.forEach(({ video, plane }) => {});
+      videos4.forEach(({ video, plane }) => {});
+      videos5.forEach(({ video, plane }) => {});
       
 
       renderer.render(scene, camera);
