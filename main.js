@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         plane.position.copy(videoData.position);
         plane.scale.multiplyScalar(1);
 
-        const anchor = mindarThree.addAnchor(1);
+        const anchor = mindarThree.addAnchor(0);
         anchor.group.add(plane);
 
 
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         plane.position.copy(videoData1.position);
         plane.scale.multiplyScalar(1);
 
-        const anchor2 = mindarThree.addAnchor(2);
+        const anchor2 = mindarThree.addAnchor(1);
         anchor2.group.add(plane);
 
 
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         plane.position.copy(videoData2.position);
         plane.scale.multiplyScalar(1);
 
-        const anchor3 = mindarThree.addAnchor(3);
+        const anchor3 = mindarThree.addAnchor(2);
         anchor3.group.add(plane);
 
 
@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         plane.position.copy(videoData3.position);
         plane.scale.multiplyScalar(1);
 
-        const anchor4 = mindarThree.addAnchor(4);
+        const anchor4 = mindarThree.addAnchor(3);
         anchor4.group.add(plane);
 
 
@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         plane.position.copy(videoData4.position);
         plane.scale.multiplyScalar(1);
 
-        const anchor3 = mindarThree.addAnchor(5);
+        const anchor3 = mindarThree.addAnchor(4);
         anchor3.group.add(plane);
 
 
@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         plane.position.copy(videoData5.position);
         plane.scale.multiplyScalar(1);
 
-        const anchor4 = mindarThree.addAnchor(6);
+        const anchor4 = mindarThree.addAnchor(5);
         anchor4.group.add(plane);
 
 
@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", async() => {
 
  //#region Textura
     
-    const anchor4 = mindarThree.addAnchor(7);
+    const anchor4 = mindarThree.addAnchor(6);
     // Carga la textura de la imagen
     const textureLoader = new THREE.TextureLoader();
     const texture = textureLoader.load('Graficas/1.png');
@@ -292,7 +292,7 @@ document.addEventListener("DOMContentLoaded", async() => {
 
  //#region Textura
     
-    const anchor8 = mindarThree.addAnchor(8);
+    const anchor8 = mindarThree.addAnchor(7);
     // Carga la textura de la imagen
     const textureLoader8 = new THREE.TextureLoader();
     const texture8 = textureLoader8.load('Paisajes/e9131c558bf94fc68be3baac3837b7f3.jpg');
@@ -313,7 +313,7 @@ document.addEventListener("DOMContentLoaded", async() => {
   
    //#region Textura
     
-    const anchor9 = mindarThree.addAnchor(9);
+    const anchor9 = mindarThree.addAnchor(8);
     // Carga la textura de la imagen
     const textureLoader9 = new THREE.TextureLoader();
     const texture9 = textureLoader9.load('personajes/Captura de pantalla 2024-11-07 125159.png');
@@ -334,7 +334,7 @@ document.addEventListener("DOMContentLoaded", async() => {
   
   //#region Textura
     
-    const anchor10 = mindarThree.addAnchor(10);
+    const anchor10 = mindarThree.addAnchor(9);
     // Carga la textura de la imagen
     const textureLoader10 = new THREE.TextureLoader();
     const texture10 = textureLoader10.load('personajes/Captura de pantalla 2024-11-07 125159.png');
