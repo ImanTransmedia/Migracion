@@ -290,6 +290,68 @@ document.addEventListener("DOMContentLoaded", async() => {
 
     //#endregion
 
+ //#region Textura
+    
+    const anchor8 = mindarThree.addAnchor(8);
+    // Carga la textura de la imagen
+    const textureLoader8 = new THREE.TextureLoader();
+    const texture8 = textureLoader8.load('Paisajes/e9131c558bf94fc68be3baac3837b7f3.jpg');
+
+    // Crea un material usando la textura
+    const material8 = new THREE.MeshBasicMaterial({ color: 0xffffff, map: texture });
+
+    // Crea una geometría (por ejemplo, un plano)
+    const geometry8 = new THREE.PlaneGeometry(1, 1);
+
+    // Crea el mesh combinando la geometría y el material
+    const mesh8 = new THREE.Mesh(geometry8, material8);
+                             
+    anchor8.group.add (mesh8);
+
+    //#endregion
+  
+  
+   //#region Textura
+    
+    const anchor9 = mindarThree.addAnchor(9);
+    // Carga la textura de la imagen
+    const textureLoader9 = new THREE.TextureLoader();
+    const texture9 = textureLoader9.load('personajes/Captura de pantalla 2024-11-07 125159.png');
+
+    // Crea un material usando la textura
+    const material9 = new THREE.MeshBasicMaterial({ color: 0xffffff, map: texture });
+
+    // Crea una geometría (por ejemplo, un plano)
+    const geometry9 = new THREE.PlaneGeometry(1, 1);
+
+    // Crea el mesh combinando la geometría y el material
+    const mesh9 = new THREE.Mesh(geometry9, material9);
+                             
+    anchor9.group.add (mesh9);
+
+    //#endregion
+
+  
+  //#region Textura
+    
+    const anchor10 = mindarThree.addAnchor(10);
+    // Carga la textura de la imagen
+    const textureLoader10 = new THREE.TextureLoader();
+    const texture10 = textureLoader10.load('personajes/Captura de pantalla 2024-11-07 125159.png');
+
+    // Crea un material usando la textura
+    const material10 = new THREE.MeshBasicMaterial({ color: 0xffffff, map: texture });
+
+    // Crea una geometría (por ejemplo, un plano)
+    const geometry10 = new THREE.PlaneGeometry(1, 1);
+
+    // Crea el mesh combinando la geometría y el material
+    const mesh10 = new THREE.Mesh(geometry10, material10);
+                             
+    anchor9.group.add (mesh10);
+
+    //#endregion
+
 
 
 //ejecutable  
