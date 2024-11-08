@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         const plane = new THREE.Mesh(geometry, material);
         plane.rotation.x = 0;
         plane.position.copy(videoData.position);
-        plane.scale.multiplyScalar(0.5);
+        plane.scale.multiplyScalar(1);
 
         const anchor = mindarThree.addAnchor(1);
         anchor.group.add(plane);
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         const plane = new THREE.Mesh(geometry, material);
         plane.rotation.x = 0;
         plane.position.copy(videoData1.position);
-        plane.scale.multiplyScalar(0.5);
+        plane.scale.multiplyScalar(1);
 
         const anchor2 = mindarThree.addAnchor(2);
         anchor2.group.add(plane);
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         const plane = new THREE.Mesh(geometry, material);
         plane.rotation.x = 0;
         plane.position.copy(videoData2.position);
-        plane.scale.multiplyScalar(0.5);
+        plane.scale.multiplyScalar(1);
 
         const anchor3 = mindarThree.addAnchor(3);
         anchor3.group.add(plane);
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         const plane = new THREE.Mesh(geometry, material);
         plane.rotation.x = 0;
         plane.position.copy(videoData3.position);
-        plane.scale.multiplyScalar(0.5);
+        plane.scale.multiplyScalar(1);
 
         const anchor4 = mindarThree.addAnchor(4);
         anchor4.group.add(plane);
@@ -184,11 +184,95 @@ document.addEventListener("DOMContentLoaded", async() => {
 
     //#endregion
   
+  
+  //#region Video5
+
+    const videosData4 = [
+      {
+        url: "Paisajes/animacion backgroud prop 4.mp4",
+        position: new THREE.Vector3(0, 0, 0.1),
+      },
+
+    ];
+
+    const videos4 = await Promise.all(
+      videosData4.map(async (videoData4) => {
+        const videoTexture4 = await loadVideo(videoData4.url);
+        const video = videoTexture4.image;
+
+        const geometry = new THREE.PlaneGeometry(1, 1080 / 1080);
+        const material = new THREE.MeshBasicMaterial({ color: 0xffffff, map: videoTexture4 });
+        const plane = new THREE.Mesh(geometry, material);
+        plane.rotation.x = 0;
+        plane.position.copy(videoData4.position);
+        plane.scale.multiplyScalar(1);
+
+        const anchor3 = mindarThree.addAnchor(5);
+        anchor3.group.add(plane);
+
+
+        anchor3.onTargetFound = () => {
+          video.play();
+
+        };
+
+        anchor3.onTargetLost = () => {
+          video.pause();
+
+        };
+
+        return { video, plane };
+      })
+    );
+
+    //#endregion
+
+//#region Video6
+
+    const videosData5 = [
+      {
+        url: "personajes/Animacion Personajes prop_1.mp4",
+        position: new THREE.Vector3(0, 0, 0.1),
+      },
+
+    ];
+
+    const videos5 = await Promise.all(
+      videosData5.map(async (videoData5) => {
+        const videoTexture5 = await loadVideo(videoData5.url);
+        const video = videoTexture5.image;
+
+        const geometry = new THREE.PlaneGeometry(1, 1080 / 1080);
+        const material = new THREE.MeshBasicMaterial({ color: 0xffffff, map: videoTexture5 });
+        const plane = new THREE.Mesh(geometry, material);
+        plane.rotation.x = 0;
+        plane.position.copy(videoData5.position);
+        plane.scale.multiplyScalar(1);
+
+        const anchor4 = mindarThree.addAnchor(6);
+        anchor4.group.add(plane);
+
+
+        anchor4.onTargetFound = () => {
+          video.play();
+
+        };
+
+        anchor4.onTargetLost = () => {
+          video.pause();
+
+        };
+
+        return { video, plane };
+      })
+    );
+
+    //#endregion
 
 
  //#region Textura
     
-    const anchor4 = mindarThree.addAnchor(5);
+    const anchor4 = mindarThree.addAnchor(7);
     // Carga la textura de la imagen
     const textureLoader = new THREE.TextureLoader();
     const texture = textureLoader.load('Graficas/1.png');
